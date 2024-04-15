@@ -1,6 +1,6 @@
 name: proj_testCase01
 description: Project created for the end-to-end test case.
-version: v0.1
+version: v0.2
 author: sharad.ghallal@cloudaeon.net
 language: python
 buildSystem: ''
