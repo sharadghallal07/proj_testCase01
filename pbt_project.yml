@@ -1,0 +1,107 @@
+name: proj_testCase01
+description: Project created for the end-to-end test case.
+version: 0.0.1
+author: sharad.ghallal@cloudaeon.net
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: projtestcase01
+  parentArtefactID: sharadghallalcloudaeonnetteam
+  buildSystem: wheel
+  author: null
+  createdAt: '2024-04-15 10:00:47'
+pipelines:
+  pipelines/pl_farmers_market:
+    name: pl_farmers_market
+    description: pipeline created for the test case of farmers market geographic data.
+    author: sharad.ghallal@cloudaeon.net
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-04-15 10:00:47'
+    datasets:
+      inputs:
+      - datasets/ds_farmers_markets
+      - datasets/ds_zipcode_agi
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/ds_farmers_markets:
+    name: ds_farmers_markets
+    description: ''
+    author: sharad.ghallal@cloudaeon.net
+    createdAt: '2024-04-15 10:09:56'
+    mode: batch
+    physicalDatasets:
+      fbr_testCase01:
+        fabricId: 11207
+        datasetType: File
+        description: ''
+        author: sharad.ghallal@cloudaeon.net
+        createdAt: '2024-04-15 10:09:56'
+  datasets/ds_zipcode_agi:
+    name: ds_zipcode_agi
+    description: ''
+    author: sharad.ghallal@cloudaeon.net
+    createdAt: '2024-04-15 17:44:34'
+    mode: batch
+    physicalDatasets:
+      fbr_testCase01:
+        fabricId: 11207
+        datasetType: File
+        description: ''
+        author: sharad.ghallal@cloudaeon.net
+        createdAt: '2024-04-15 17:44:34'
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: '3.10'
+  gemLibsVersion: 1.3.4.0
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-04-15 10:00:47'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2024-04-15T10:00:47.750879Z'
+  name: plibMaven
+  version: 7.1.88
+  createdAt: '2024-04-15T10:00:47.750879Z'
+  type: plibMaven
+- modifiedAt: '2024-04-15T10:00:47.750879Z'
+  name: plibPypi
+  version: 1.8.15
+  createdAt: '2024-04-15T10:00:47.750879Z'
+  type: plibPypi
+projectDependencies:
+  '12654':
+    projectUID: 12654
+    projectName: ProphecySparkBasicsPython
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=
+    version: 0.2.5
+    isDefault: true
+    author: null
+    createdAt: '2024-04-15 09:58:43'
+  '12655':
+    projectUID: 12655
+    projectName: ProphecyWarehousePython
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12655.git&subPath=
+    version: 0.0.5
+    isDefault: true
+    author: null
+    createdAt: '2024-04-15 09:58:43'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
