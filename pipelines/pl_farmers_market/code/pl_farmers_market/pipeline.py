@@ -17,16 +17,9 @@ def pipeline(spark: SparkSession) -> None:
     df_updated_ToDate = updated_ToDate(spark, df_inserted_Col_ToDate)
     df_create_Col_Source = create_Col_Source(spark, df_updated_ToDate)
     df_fillNa = fillNa(spark, df_create_Col_Source)
-    df_convert_season1_date = convert_season1_date(spark, df_reformatted_columns)
-    df_add_columns = add_columns(spark, df_zip_clean)
-    df_convert_season1date_to_date = convert_season1date_to_date(spark, df_zip_clean)
-    df_convert_season1date_to_date_1 = convert_season1date_to_date_1(spark, df_reformatted_columns)
-    df_update_to_date = update_to_date(spark, df_convert_season1date_to_date_1)
     df_ds_zipcode_agi = ds_zipcode_agi(spark)
     df_join_zipcode = join_zipcode(spark, df_fillNa, df_ds_zipcode_agi)
     df_count_cheese_by_county = count_cheese_by_county(spark, df_join_zipcode)
-    df_replace_season1_date_with_to_date = replace_season1_date_with_to_date(spark, df_reformatted_columns)
-    df_update_to_date_column = update_to_date_column(spark, df_replace_season1_date_with_to_date)
     ds_farmers_markets_analysis(spark, df_count_cheese_by_county)
 
 def main():
