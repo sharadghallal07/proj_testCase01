@@ -25,6 +25,7 @@ pipelines:
       - datasets/ds_zipcode_agi
       outputs:
       - datasets/ds_farmers_markets_analysis
+      - datasets/ds_farmers_markets_analysis_min
     subgraphs: []
     dependencies: {}
 datasets:
@@ -67,6 +68,19 @@ datasets:
         description: ''
         author: sharad.ghallal@cloudaeon.net
         createdAt: '2024-04-15 18:28:08'
+  datasets/ds_farmers_markets_analysis_min:
+    name: ds_farmers_markets_analysis_min
+    description: ''
+    author: sharad.ghallal@cloudaeon.net
+    createdAt: '2024-04-17 08:40:52'
+    mode: batch
+    physicalDatasets:
+      fbr_testCase01:
+        fabricId: 11207
+        datasetType: File
+        description: ''
+        author: sharad.ghallal@cloudaeon.net
+        createdAt: '2024-04-17 08:40:52'
 templates: {}
 jobs: {}
 gemContainer:
