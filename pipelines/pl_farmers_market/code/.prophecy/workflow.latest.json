@@ -71,12 +71,6 @@
     "configurationVersion" : "v2"
   },
   "connections" : [ {
-    "id" : "cyINaci4UuazDFvKBhNMR$$UW7yccW04H8raNPHaerH_",
-    "source" : "aIlsZgk9mIaaqOcwbGn6G$$mVaMw3b-XpOCLBcpqciDb",
-    "sourcePort" : "qJbLfnH1qi2ZqQyfEpy15$$2Vg2y1Jz4mSDaaQq-5n8g",
-    "target" : "Q-gp-OPLqiUbOBzisLheo$$drpcjfWXDtTY4YNJzKlXl",
-    "targetPort" : "1xytGeyrkXt8ssJwnHVId$$wuncXY5VW-xlks3VkSbNU"
-  }, {
     "id" : "Ymst-ZggXfBUVCdpban-G",
     "source" : "Q-gp-OPLqiUbOBzisLheo$$drpcjfWXDtTY4YNJzKlXl",
     "sourcePort" : "KTCBL_C4FmxGoMJU5ST9N$$8KKX_eW8x1qWW73A_7PkM",
@@ -118,12 +112,6 @@
     "sourcePort" : "jgNaCjk6tFOI1_sSZwZ7n$$KWxFh4PLn-GwaKVLGSgHn",
     "target" : "8OSJnQ3hWfUpYrvwwa_wV$$Pyhc1FJINO-yIPGjg121F",
     "targetPort" : "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-"
-  }, {
-    "id" : "q_HzM3no-xY9VWLQnA9iG",
-    "source" : "xdfw2yAH6Eop5REF0-sux$$qx0bdQAIZdC_Fo6Ij9Xbf",
-    "sourcePort" : "884XjXLyxWDX4OSsKaDql$$mlM4voms0laGkfmWasxh7",
-    "target" : "3QOjKQPj3O5gjWUEWfn3I$$7oLfMNFY8xdq55v-znXGC",
-    "targetPort" : "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd"
   }, {
     "id" : "gvhoxP3GKEB143LS6IR5R$$hzGjS-FuGHPrBuf3zEPkb",
     "source" : "3QOjKQPj3O5gjWUEWfn3I$$7oLfMNFY8xdq55v-znXGC",
@@ -190,6 +178,18 @@
     "sourcePort" : "K2CQwIJ2EHuWqEMS28f-X$$d78OgwwTmle4QrMhnx7Br",
     "target" : "bTv8MRA3OQivjGPEJG_UI$$ml8X6xxaZ-JZ-yMSmc7uV",
     "targetPort" : "gpxNJPhxJ3YK4Mp-ooNAV$$c73E-nTvSr1_1GfitKrhI"
+  }, {
+    "id" : "1kzIAHAojUqykhrYTUFeB",
+    "source" : "aIlsZgk9mIaaqOcwbGn6G$$mVaMw3b-XpOCLBcpqciDb",
+    "sourcePort" : "qJbLfnH1qi2ZqQyfEpy15$$2Vg2y1Jz4mSDaaQq-5n8g",
+    "target" : "Q-gp-OPLqiUbOBzisLheo$$drpcjfWXDtTY4YNJzKlXl",
+    "targetPort" : "1xytGeyrkXt8ssJwnHVId$$wuncXY5VW-xlks3VkSbNU"
+  }, {
+    "id" : "gDWk-TRPjQUmuabhnroYu",
+    "source" : "xdfw2yAH6Eop5REF0-sux$$qx0bdQAIZdC_Fo6Ij9Xbf",
+    "sourcePort" : "884XjXLyxWDX4OSsKaDql$$mlM4voms0laGkfmWasxh7",
+    "target" : "3QOjKQPj3O5gjWUEWfn3I$$7oLfMNFY8xdq55v-znXGC",
+    "targetPort" : "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd"
   } ],
   "processes" : {
     "JOO3W-0J71YDTy4XHesNf$$Fs0H2-3BaO5L0pVOXz291" : {
@@ -198,8 +198,8 @@
       "metadata" : {
         "label" : "reformatted_market_data",
         "slug" : "reformatted_market_data",
-        "x" : 300,
-        "y" : -640,
+        "x" : 200,
+        "y" : -520,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -1186,7 +1186,7 @@
         } ],
         "importString" : "FMID,FMID\nMarketName,MarketName\nWebsite,Website\nFacebook,Facebook\nTwitter,Twitter\nYoutube,Youtube\nOtherMedia,OtherMedia\nstreet,street\ncity,city\nCounty,County\nState,State\nzip,length(zip)\nSeason1Date,Season1Date\nFromDate,CASE WHEN isnull(Season1Date) THEN '2014-01-01' ELSE Season1Date END\nToDate,CASE WHEN isnull(Season1Date) THEN '2014-12-31' ELSE Season1Date END\nSeason1Time,Season1Time\nSeason2Date,Season2Date\nSeason2Time,Season2Time\nSeason3Date,Season3Date\nSeason3Time,Season3Time\nSeason4Date,Season4Date\nSeason4Time,Season4Time\nx,x\ny,y\nLocation,Location\nCredit,Credit\nWIC,WIC\nWICcash,WICcash\nSFMNP,SFMNP\nSNAP,SNAP\nOrganic,Organic\nBakedgoods,Bakedgoods\nCheese,Cheese\nCrafts,Crafts\nFlowers,Flowers\nEggs,Eggs\nSeafood,Seafood\nHerbs,Herbs\nVegetables,Vegetables\nHoney,Honey\nJams,Jams\nMaple,Maple\nMeat,Meat\nNursery,Nursery\nNuts,Nuts\nPlants,Plants\nPoultry,Poultry\nPrepared,Prepared\nSoap,Soap\nTrees,Trees\nWine,Wine\nCoffee,Coffee\nBeans,Beans\nFruits,Fruits\nGrains,Grains\nJuices,Juices\nMushrooms,Mushrooms\nPetFood,PetFood\nTofu,Tofu\nWildHarvested,WildHarvested\nupdateTime,updateTime",
         "activeTab" : "expressions",
-        "columnsSelector" : [ ]
+        "columnsSelector" : [ "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##WIC", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Nuts", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##y", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##SNAP", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##SFMNP", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Season4Time", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##FMID", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##WildHarvested", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Season4Date", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##OtherMedia", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Soap", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Twitter", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Season3Time", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Meat", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##street", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Coffee", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##County", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Crafts", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Wine", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##PetFood", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Location", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Facebook", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Fruits", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##State", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##zip", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Season2Time", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Youtube", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Trees", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Credit", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##WICcash", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##updateTime", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Prepared", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Cheese", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Bakedgoods", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Maple", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Beans", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Flowers", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##city", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Jams", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Plants", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Nursery", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Eggs", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Honey", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Season3Date", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Season1Time", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Seafood", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Herbs", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Organic", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Tofu", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##x", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Website", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Season1Date", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Poultry", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##MarketName", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Grains", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Juices", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Mushrooms", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Season2Date", "Td7BnnfJgdCkmaYylt9zj$$LMmxjSLmlzctk-HeXMTCU##Vegetables" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.5&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -1199,8 +1199,8 @@
       "metadata" : {
         "label" : "fillNa",
         "slug" : "fillNa",
-        "x" : 1220,
-        "y" : -60,
+        "x" : 1140,
+        "y" : 160,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -2357,8 +2357,8 @@
       "metadata" : {
         "label" : "updated_Col_ToDate",
         "slug" : "updated_Col_ToDate",
-        "x" : 540,
-        "y" : -260,
+        "x" : 400,
+        "y" : -40,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -3497,8 +3497,8 @@
       "metadata" : {
         "label" : "inserted_Col_ToDate",
         "slug" : "inserted_Col_ToDate",
-        "x" : 820,
-        "y" : -260,
+        "x" : 700,
+        "y" : -40,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -4637,8 +4637,8 @@
       "metadata" : {
         "label" : "ds_farmers_markets",
         "slug" : "ds_farmers_markets",
-        "x" : -120,
-        "y" : -480,
+        "x" : -220,
+        "y" : -380,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -4664,8 +4664,8 @@
       "metadata" : {
         "label" : "cnt_by_production",
         "slug" : "cnt_by_production",
-        "x" : 1040,
-        "y" : -540,
+        "x" : 800,
+        "y" : -460,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -6393,7 +6393,7 @@
         "pivotColumn" : null,
         "pivotValues" : [ ],
         "activeTab" : "aggregate",
-        "columnsSelector" : [ "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Organic", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Seafood", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Credit", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##SFMNP", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##WIC", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Bakedgoods", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##WICcash", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Flowers", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Crafts", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Herbs", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Location", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Vegetables", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Cheese", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##County", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##SNAP", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Eggs" ],
+        "columnsSelector" : [ "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Eggs", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Herbs", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Location", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##WICcash", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##County", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##SFMNP", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Vegetables", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##WIC", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Bakedgoods", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Crafts", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##SNAP", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Cheese", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Seafood", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Credit", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Organic", "pH3yb2vn5JnakrKg2I7pT$$Bo1K_mEYlrh4XPHg7nh8y##Flowers" ],
         "groupBy" : [ {
           "target" : "County",
           "expression" : {
@@ -6423,8 +6423,8 @@
       "metadata" : {
         "label" : "date_transformation",
         "slug" : "date_transformation",
-        "x" : 520,
-        "y" : -640,
+        "x" : 400,
+        "y" : -520,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -7572,8 +7572,8 @@
       "metadata" : {
         "label" : "filter_by_zip_length",
         "slug" : "filter_by_zip_length",
-        "x" : 100,
-        "y" : -640,
+        "x" : 0,
+        "y" : -520,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -8129,7 +8129,7 @@
         "autoUpdateOnRun" : false
       },
       "properties" : {
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "RmiWxtbVHrfVj9GmtzOAs$$bYQf9rmwnSmVN3UGelWzl##zip" ],
         "condition" : {
           "format" : "sql",
           "expression" : "length(zip)==5 "
@@ -8146,8 +8146,8 @@
       "metadata" : {
         "label" : "count_cheese_by_county",
         "slug" : "count_cheese_by_county",
-        "x" : 1580,
-        "y" : -400,
+        "x" : 1480,
+        "y" : -300,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -10034,7 +10034,7 @@
         "pivotColumn" : null,
         "pivotValues" : [ ],
         "activeTab" : "groupBy",
-        "columnsSelector" : [ "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Wine", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##PetFood", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Eggs", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##SFMNP", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Nursery", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##County", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Jams", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Mushrooms", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Prepared", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Trees", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Bakedgoods", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Juices", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##WildHarvested", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Beans", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Crafts", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Herbs", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Meat", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Tofu", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##WICcash", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Seafood", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##WIC", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Cheese", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Plants", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Flowers", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Honey", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Poultry", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##SNAP", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Nuts", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Fruits", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Credit", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Maple", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Organic", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Grains", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Soap", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Location", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Coffee", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Vegetables" ],
+        "columnsSelector" : [ "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Plants", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Flowers", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##WildHarvested", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Jams", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Prepared", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Maple", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##PetFood", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Cheese", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Trees", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Eggs", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Wine", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Herbs", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Nursery", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Nuts", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Vegetables", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Coffee", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Grains", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Honey", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Bakedgoods", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Fruits", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Meat", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Crafts", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##County", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##WICcash", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Mushrooms", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Soap", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Organic", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Credit", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Poultry", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Location", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##SNAP", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##WIC", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Beans", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##SFMNP", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Seafood", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Tofu", "AiXMapvZKLj9yz7Qx549j$$ZbNJW5RheM0dHs_ZtGexO##Juices" ],
         "groupBy" : [ {
           "target" : "County",
           "expression" : {
@@ -10064,8 +10064,8 @@
       "metadata" : {
         "label" : "updated_FromDate",
         "slug" : "updated_FromDate",
-        "x" : 660,
-        "y" : -60,
+        "x" : 580,
+        "y" : 160,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -11204,8 +11204,8 @@
       "metadata" : {
         "label" : "ds_farmers_markets_analysis_min",
         "slug" : "ds_farmers_markets_analysis_min",
-        "x" : 1260,
-        "y" : -560,
+        "x" : 1000,
+        "y" : -460,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -11380,8 +11380,8 @@
       "metadata" : {
         "label" : "reformatted_columns",
         "slug" : "reformatted_columns",
-        "x" : 240,
-        "y" : -260,
+        "x" : 120,
+        "y" : -20,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -12368,7 +12368,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Organic", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Nuts", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##WildHarvested", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Seafood", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##PetFood", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Coffee", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##SNAP", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Trees", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Prepared", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season1Time", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##MarketName", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Soap", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Maple", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Website", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##street", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Youtube", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##State", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Herbs", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Crafts", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season1Date", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season3Time", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Jams", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##y", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Vegetables", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season2Date", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Grains", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##SFMNP", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Mushrooms", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Tofu", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season2Time", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Location", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##x", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Fruits", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##County", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Credit", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season4Time", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Twitter", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Juices", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##OtherMedia", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##updateTime", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Honey", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Eggs", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Facebook", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##zip", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##WICcash", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Beans", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Flowers", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Plants", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##city", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season3Date", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##FMID", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Wine", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##WIC", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Nursery", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Cheese", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Meat", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season4Date", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Poultry", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Bakedgoods" ]
+        "columnsSelector" : [ "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Nuts", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Organic", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Soap", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Cheese", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Nursery", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season3Date", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Maple", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Vegetables", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Prepared", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##WildHarvested", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##x", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Eggs", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Poultry", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Seafood", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##OtherMedia", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Grains", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Bakedgoods", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Herbs", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season2Time", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Jams", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##WICcash", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Beans", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season1Time", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Juices", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Mushrooms", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Credit", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Twitter", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##MarketName", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Coffee", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Facebook", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Wine", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Honey", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##WIC", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Website", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##y", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Location", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##city", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Flowers", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season4Time", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##updateTime", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##street", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##SNAP", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Trees", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Meat", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season3Time", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##zip", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##FMID", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Plants", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Youtube", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season4Date", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Fruits", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##State", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season2Date", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Crafts", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##SFMNP", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##PetFood", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##County", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Season1Date", "3IQZyxPYHQdQka0A7aedI$$A8oGlWgfh_qy7vZouW_rY##Tofu" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.5&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -12381,8 +12381,8 @@
       "metadata" : {
         "label" : "updated_Col_FromDate",
         "slug" : "updated_Col_FromDate",
-        "x" : 400,
-        "y" : -60,
+        "x" : 260,
+        "y" : 140,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -13521,8 +13521,8 @@
       "metadata" : {
         "label" : "by_zipcode",
         "slug" : "by_zipcode",
-        "x" : 800,
-        "y" : -560,
+        "x" : 660,
+        "y" : -400,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -15177,8 +15177,8 @@
       "metadata" : {
         "label" : "zip_clean",
         "slug" : "zip_clean",
-        "x" : 100,
-        "y" : -60,
+        "x" : -20,
+        "y" : 140,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -16281,8 +16281,8 @@
       "metadata" : {
         "label" : "create_Col_Source",
         "slug" : "create_Col_Source",
-        "x" : 1120,
-        "y" : -260,
+        "x" : 1000,
+        "y" : -40,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -17294,7 +17294,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Flowers", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##SNAP", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Credit", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Nuts", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##x", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Mushrooms", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##SFMNP", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season3Time", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Herbs", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Vegetables", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season2Date", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##zip", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##WildHarvested", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##city", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Grains", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##WIC", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##FMID", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##State", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##County", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##MarketName", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##PetFood", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season3Date", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Juices", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season1Date", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Meat", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season4Time", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Honey", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##OtherMedia", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Fruits", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Prepared", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##y", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Soap", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Website", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Wine", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season1Time", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Bakedgoods", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Facebook", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##WICcash", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Poultry", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Youtube", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##street", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Organic", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Eggs", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season2Time", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Crafts", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Jams", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Nursery", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Beans", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Twitter", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##updateTime", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Plants", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Maple", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Trees", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season4Date", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##FromDate", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##ToDate", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Tofu", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Location", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Cheese", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Seafood", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Coffee" ]
+        "columnsSelector" : [ "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Plants", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season2Time", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Coffee", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Credit", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Vegetables", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Prepared", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Seafood", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Website", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season1Date", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Nuts", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##x", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Wine", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season3Time", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##WIC", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##SNAP", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##updateTime", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Soap", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##street", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Meat", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Facebook", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Grains", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Juices", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Maple", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Honey", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season1Time", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season4Time", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##SFMNP", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Cheese", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Flowers", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Beans", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Location", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##FromDate", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Jams", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Tofu", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##WildHarvested", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##OtherMedia", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##PetFood", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##WICcash", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Fruits", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##State", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##ToDate", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##city", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Twitter", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Mushrooms", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Youtube", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Organic", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Herbs", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Bakedgoods", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season2Date", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##FMID", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season4Date", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##zip", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Nursery", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Season3Date", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##County", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Poultry", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Eggs", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Trees", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##y", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##Crafts", "lXHFpuTFaoItFUfBd27FK$$zAY-4OUwHj0fW_gA4AT7-##MarketName" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.5&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -17307,8 +17307,8 @@
       "metadata" : {
         "label" : "ds_farmers_markets_analysis",
         "slug" : "ds_farmers_markets_analysis",
-        "x" : 1740,
-        "y" : -400,
+        "x" : 1680,
+        "y" : -300,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -17672,8 +17672,8 @@
       "metadata" : {
         "label" : "ds_zipcode_agi",
         "slug" : "ds_zipcode_agi",
-        "x" : 100,
-        "y" : -380,
+        "x" : 60,
+        "y" : -220,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -17699,8 +17699,8 @@
       "metadata" : {
         "label" : "join_zipcode",
         "slug" : "join_zipcode",
-        "x" : 1360,
-        "y" : -400,
+        "x" : 1260,
+        "y" : -220,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -20739,7 +20739,7 @@
         } ],
         "allIn1" : null,
         "activeTab" : "conditions",
-        "columnsSelector" : [ "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##zipcode", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##zip", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##NUMDEP", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A02500", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##STATEFIPS", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A03230", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Honey", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A04800", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##city", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N07300", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A00300", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##WICcash", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Flowers", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##SCHF", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Juices", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A85330", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A18450", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season4Date", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A03210", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Credit", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A07230", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A11070", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A09600", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A26270", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A10600", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A01700", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N06500", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A07180", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##street", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Poultry", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Jams", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N03150", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N85300", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N19700", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##updateTime", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N00650", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N03210", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Herbs", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A06500", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A09400", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A18425", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##State", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A11902", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N00300", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##zip", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Nuts", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A03220", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N1", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N10300", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N11901", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##MarketName", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Organic", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N09600", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N07180", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A10960", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N07240", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##MARS1", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Trees", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season2Time", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N05800", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N18425", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A03270", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Source", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N07260", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Beans", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N00900", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A19700", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##MARS2", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N03220", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##x", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Youtube", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##WildHarvested", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N04800", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N02900", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A18300", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Nursery", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A59720", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A03150", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Vegetables", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Cheese", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Website", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A00650", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A59660", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N11902", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Facebook", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N59660", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##OtherMedia", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Wine", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A07220", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A00900", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N10960", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N00200", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##FromDate", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##agi_stub", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A00600", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A07100", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##STATE", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Mushrooms", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N00600", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N07100", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##SNAP", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##MARS4", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N01700", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##PREP", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Fruits", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N00700", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A02900", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Plants", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A03240", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A10300", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##County", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##PetFood", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N85330", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A01400", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season4Time", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season1Date", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N10600", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N09400", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A03300", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Seafood", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A05800", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A11901", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Maple", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##SFMNP", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A02650", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A00200", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N02650", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A07260", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season1Time", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N03230", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N02300", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N01400", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A04470", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Crafts", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N03300", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N03270", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Coffee", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N02500", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N19300", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Soap", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A85300", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N11070", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season3Time", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N04470", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N18500", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##FMID", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A19300", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A07240", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N2", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season3Date", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A00700", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##ToDate", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season2Date", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N01000", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N07230", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N59720", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A07300", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Tofu", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A00100", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N07220", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##y", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##WIC", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Prepared", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Location", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A01000", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A00101", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Grains", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Meat", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Twitter", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A02300", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N26270", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N18300", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Eggs", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##A18500", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Bakedgoods", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N03240", "PXdYiIPDpdkuOehaI4G1j$$4AdsjizAZNx-rNkoWR9Qd##N18450" ],
+        "columnsSelector" : [ "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##zip", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##FromDate", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Vegetables", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##zip", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Herbs", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##State", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Beans", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Bakedgoods", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Trees", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Maple", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Source", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season4Date", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Tofu", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Nursery", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season2Date", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season2Time", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Youtube", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##y", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season1Time", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Fruits", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Juices", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Grains", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season3Date", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Cheese", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##x", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Wine", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##WICcash", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Crafts", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Credit", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##updateTime", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Nuts", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##OtherMedia", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season3Time", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##SFMNP", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Honey", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Jams", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season4Time", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Location", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Plants", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##street", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Poultry", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Mushrooms", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##FMID", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##WildHarvested", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Twitter", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##ToDate", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Organic", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Prepared", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##SNAP", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Website", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##WIC", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##MarketName", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##city", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##PetFood", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Soap", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Meat", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Seafood", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Season1Date", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Flowers", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Coffee", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Facebook", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##Eggs", "FX7BQhNQhbWN925g-4G2T$$zhCkZI7psHRCuLoVEWcF4##County" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
@@ -20755,8 +20755,8 @@
       "metadata" : {
         "label" : "updated_ToDate",
         "slug" : "updated_ToDate",
-        "x" : 960,
-        "y" : -60,
+        "x" : 880,
+        "y" : 160,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
