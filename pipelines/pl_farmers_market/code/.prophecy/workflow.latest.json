@@ -17,7 +17,7 @@
       "hasApplication" : true
     },
     "language" : "python",
-    "fabricId" : "11207",
+    "fabricId" : "13085",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
