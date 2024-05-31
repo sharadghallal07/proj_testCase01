@@ -24,8 +24,23 @@ pipelines:
       - datasets/ds_farmers_markets
       - datasets/ds_zipcode_agi
       outputs:
-      - datasets/ds_farmers_markets_analysis
       - datasets/ds_farmers_markets_analysis_min
+    subgraphs: []
+    dependencies: {}
+  pipelines/pl_test01:
+    name: pl_test01
+    description: pipeline created for the test case of farmers market geographic data.
+    author: sharad.ghallal@cloudaeon.net
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-05-31 07:00:46'
+    datasets:
+      inputs:
+      - datasets/ds_farmers_markets
+      - datasets/ds_zipcode_agi
+      outputs:
+      - datasets/ds_farmers_markets_analysis
     subgraphs: []
     dependencies: {}
 datasets:
@@ -97,22 +112,26 @@ functions:
   airflowFunctions: {}
 subgraphs: {}
 sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
 sqlMacros: {}
 sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
-- modifiedAt: '2024-04-15T10:00:47.750879Z'
+- type: plibMaven
+  modifiedAt: '2024-05-31T07:00:22.511123Z'
   name: plibMaven
-  version: 7.1.88
-  createdAt: '2024-04-15T10:00:47.750879Z'
-  type: plibMaven
-- modifiedAt: '2024-04-15T10:00:47.750879Z'
+  version: 7.1.96
+  id: '22382116'
+  createdAt: '2024-05-31T07:00:22.511048Z'
+- type: plibPypi
+  modifiedAt: '2024-05-31T07:00:22.51119Z'
   name: plibPypi
   version: 1.8.15
-  createdAt: '2024-04-15T10:00:47.750879Z'
-  type: plibPypi
+  id: '615921924'
+  createdAt: '2024-05-31T07:00:22.511155Z'
 projectDependencies:
   '12654':
     projectUID: 12654
